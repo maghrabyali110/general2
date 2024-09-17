@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #13b804;
+            direction: rtl;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .contact-container {
+            margin-top: 50px;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 36px;
+        }
+
+        .contact-form {
+            display: inline-block;
+            width: 50%;
+            background-color: #067e12;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        label {
+            font-size: 18px;
+            color: #555;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .submit-button, .call-button {
+            display: inline-block;
+            background-color: #06468b;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .submit-button:hover {
+            background-color: #0056b3;
+        }
+
+        .call-button {
+            background-color: #28a745;
+        }
+
+        .call-button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <h1>اتصل بنا</h1>
+        <form class="contact-form">
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" name="email" placeholder="أدخل بريدك الإلكتروني" required>
+
+            <label for="phone">رقم الهاتف:</label>
+            <input type="tel" id="phone" name="phone" placeholder="أدخل رقم هاتفك" required>
+
+            <label for="message">رسالتك:</label>
+            <textarea id="message" name="message" rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
+            
+            <button type="submit" class="submit-button">إرسال الرسالة</button>
+
+            <a href="tel:+201030273874" class="call-button">اتصل بنا الآن</a>
+        </form>
+    </div>
+</body>
+</html>
